@@ -30,6 +30,7 @@ docs/
 | 檔案 | 說明 |
 |------|------|
 | [UMDF 開發指南](develop/umdf-development-guide.md) | UMDF 驅動程式開發教學 |
+| [IOCTL 通訊](develop/ioctl-communication.md) | App 與驅動程式溝通 |
 | [TODO](develop/todo.md) | 待完成事項 |
 
 ### 研究資料 (research/)
