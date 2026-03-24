@@ -1,0 +1,39 @@
+; Virtual HID Mini Driver INF File
+; 基礎版本
+
+[Version]
+Signature   = "$Windows NT$"
+Class        = HIDClass
+ClassGuid   = {745a17a0-74d3-11d0-b6fe-00a0c955f3e7}
+Provider    = %ManufacturerName%
+DriverVer   = 03/25/2026,1.0.0.0
+CatalogFile = vhidmini.cat
+
+[Manufacturer]
+%ManufacturerName% = DeviceList
+
+[DeviceList]
+%DeviceName% = DeviceInstall, USB\VID_1234&PID_5678
+
+[DeviceInstall]
+; 基本安裝
+CopyFiles = DriverCopyFiles
+AddReg    = AddReg
+
+[DriverCopyFiles]
+vhidmini.sys,,,0x00000001
+
+[AddReg]
+; 建立服務
+HKR,,DevLoader,,ntkrnlmp
+HKR,,NTMPDriver,,vhidmini.sys
+
+; 服務群組
+HKR,,"ServiceGroup",,"Base"
+
+; HID 類別安裝
+HKR,,Install,,0x00010000
+
+[Strings]
+ManufacturerName = "VHID Developer"
+DeviceName = "Virtual HID Mini Device"
