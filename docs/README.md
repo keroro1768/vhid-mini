@@ -36,6 +36,7 @@ docs/
 
 | 檔案 | 說明 |
 |------|------|
+| [Windows Update 虛擬裝置](research/windows-update-virtual-device.md) | WU 推送機制說明 |
 | [TODO](research/todo.md) | 待研究事項 |
 
 ---
