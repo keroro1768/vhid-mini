@@ -37,6 +37,7 @@ docs/
 | 檔案 | 說明 |
 |------|------|
 | [Windows Update 虛擬裝置](research/windows-update-virtual-device.md) | WU 推送機制說明 |
+| [HID 複合架構](research/hybrid-hid-device.md) | 實體+虛擬混合裝置 |
 | [TODO](research/todo.md) | 待研究事項 |
 
 ---
